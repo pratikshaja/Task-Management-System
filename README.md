@@ -2,7 +2,7 @@
 Task management system for employee
 # Employee Task Management System
 
-A full-stack task management application built for [Company Name] as part of the Full Stack Developer assignment. Supports role-based authentication (Admin/Employee), employee management, task assignment with business rules, notifications, file uploads, and exportable reports.
+A full-stack task management application as part of the Full Stack Developer assignment. Supports role-based authentication (Admin/Employee), employee management, task assignment with business rules, notifications, file uploads, and exportable reports.
 
 ## Tech Stack
 
