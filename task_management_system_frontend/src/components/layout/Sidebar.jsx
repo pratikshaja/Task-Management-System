@@ -6,6 +6,7 @@ import {
 } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import toast from 'react-hot-toast';
+import NotificationsBell from '../../pages/NotificationsBell'
 
 const navItems = (isAdmin) => [
     { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
@@ -44,9 +45,11 @@ export default function Sidebar() {
                         {user?.name?.charAt(0)?.toUpperCase() || 'U'}
                     </div>
                     <div className="overflow-hidden">
-                        <p className="text-white text-sm font-medium truncate">{user?.name || 'User'}</p>
+                        <p className="text-white text-sm font-medium truncate">{user?.fullName || 'User'}</p>
                         <p className="text-blue-300 text-xs capitalize">{user?.role || 'employee'}</p>
                     </div>
+                    <NotificationsBell/>
+
                 </div>
             </div>
 
